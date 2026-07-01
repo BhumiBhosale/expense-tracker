@@ -1,4 +1,4 @@
-import Dashboard from "../../pages/Dashboard/Dashboard";
+import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 
@@ -11,7 +11,7 @@ function Layout() {
         <Topbar />
 
         <main className="p-8 bg-slate-50 min-h-screen">
-          <Dashboard/>
+          <Outlet />
         </main>
       </div>
     </div>
